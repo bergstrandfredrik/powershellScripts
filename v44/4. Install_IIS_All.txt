@@ -1,0 +1,8 @@
+	<# Install IIS with all components and management tools From Server PSPowerShell #>
+
+Install-WindowsFeature -Name Web-Server -IncludeManagementTools
+
+	# Shutdown after install with delay
+shutdown /r -t 15
+
+<# Try to change the Delay to a PowerShell CMDlet #>

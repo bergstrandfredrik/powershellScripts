@@ -1,0 +1,8 @@
+<# Uninstall IIS role with management tools from Server Powershell in your Server #>
+
+Uninstall-WindowsFeature -Name Web-Server -IncludeManagementTools
+
+# Shutdown after Uninstall with delay
+shutdown /r -t 15
+
+# Try to change the Delay to a PowerShell CMDlet
