@@ -1,0 +1,5 @@
+	# Install IIS with all components and management tools From Server PS
+Install-WindowsFeature -Name Web-Server -IncludeManagementTools
+
+	# Shutdown after install with delay
+shutdown /r -t 100

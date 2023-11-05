@@ -1,0 +1,9 @@
+
+
+New-VM -Name "Newwin10" -MemoryStartupBytes 2GB -Generation 2 -BootDevice VHD -VHDPath "C:\HyperV\Image_for_PS\Win10.vhdx"
+
+Set-VMProcessor -VMName "Newwin10" -Count 2
+
+Connect-VMNetworkAdapter -VMName "Newwin10" -SwitchName "Private"
+
+Start-VM -Name "Newwin10"
