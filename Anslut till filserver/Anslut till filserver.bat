@@ -1,0 +1,1 @@
+net use * \\10.254.10.253\bim-fs01 /savecred /persistent:yes 
